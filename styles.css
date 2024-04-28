@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  src: url();
+}
+
+body {
+  background: linear-gradient(to right, #FEC9C3 0%, #FAF2DD 75%);
+  overflow: hidden;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.left {
+  background: linear-gradient(to right, #FAF2DD, #F9ADB7);
+  width: 300px;
+  height: 350px;
+  padding: 20px 30px 20px 30px;
+  border: 1px solid whitesmoke;
+  border-right: 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#loading {
+  display: none;
+  position: absolute;
+  margin-top: -640px;
+  transition: all 0.5s;
+}
+
+#form {
+  width: 300px;
+  height: 350px;
+  margin: auto auto auto auto;
+  padding: 20px 30px 20px 30px;
+  background-color: #684F4B;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  border-left: 0px;
+}
+
+#form h1 {
+  color: whitesmoke;
+  text-align: center;
+}
+
+#form button {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  background-color: #F9ADB7;
+  border: none;
+  border-radius: 5px;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.input-control input {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  background-color: transparent;
+  backdrop-filter: blur;
+  color: whitesmoke;
+}
+
+.input-control input:focus {
+  outline: 0;
+}
+
+.input-control.success input {
+  border: 3px solid #09c372;
+}
+
+.input-control.error input {
+  border: 3px solid #ff3860;
+}
+
+.input-control .error {
+  color: #fd4469;
+  font-size: 13px;
+  font-weight: 500;
+  height: 13px;
+}

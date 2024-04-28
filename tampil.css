@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body{
+    background-color: #FBE8D7;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width: 250PX;
+    height: 100%;
+    background-color: #FCD9CD;
+    transition: all .5s;
+}
+.sidebar header{
+    font-size: 35px;
+    text-align: center;
+    line-height: 70px;
+    background-color: #dfac9c;
+    user-select: none;
+    color: black;
+    
+}
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    font-size: 23px;
+    padding-left: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(225,225,225,.1);
+    color: black;
+    border-bottom: 1px solid rgb(241, 152, 215);
+    transition: .4s;
+}
+ul li:hover a{
+    padding-left: 50px;
+}
+.sidebar ul a i{
+    margin-right: 16px;
+}
+#cek{
+    display: none;
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+}
+label #btn{
+    left: 269px;
+    top:20px;
+    font-size: 35px;
+    color : rgb(19, 18, 18);
+    transition: all .5s;
+}
+label #cancel{
+    z-index: 1111;
+    left: 205px;
+    top: 17px;
+    font-size: 35px;
+    color : rgb(15, 15, 15);
+    transition: all .5s;
+}
+#cek:checked ~ .sidebar{
+    left: 0px;
+}
+#cek:checked ~ .sidebar label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+
+}
+#cek:checked ~ .container{
+    margin-left: 250px;
+}
+#cek:checked ~ .container h1{
+    margin-left: -250px;
+}
+#cek:checked ~ .container .img{
+    margin-left: -200px;
+}
+#cek:checked ~ .container .konten{
+    margin-left: -200px;
+}
+#cek:checked ~ .container form{
+    margin-left: -250px;
+}
+#cek:checked ~ .container table{
+    margin-left: -250px;
+    width: 70%;
+}
+#cek:checked ~ .container .boxx{
+    margin-left: -500px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+    text-align: center;
+}
+.hide{
+    display: none;
+}
+.container img{
+    width: 700px;
+    height: 400px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.container h1, .container .img, .container .konten, .container form, .container label, .boxx{
+    transition: all .5s;
+}
+.konten{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap:25px;
+}
+.box{
+    width: 280px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: #F8B6BA;
+    text-align: center;
+}
+.box2{
+    width: 280px;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    border-radius: 20px 20px 0 0;
+    background-color: #eca1a6;
+    color: white;
+    font-size: medium;
+}
+.box img{
+    z-index: 2;
+    width: 260px;
+    height: 150px;
+    margin: 0;
+
+}
+
+
+#options{
+    position: relative;
+    top: 5px;
+}
+#showOptions{
+    position: relative;
+    right: 55px;
+}
+
+#showOptions, #options button, #smbt{
+    background-color: #e28c90;
+    color: white;
+}
+
+#cont2 button, #smbt{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+}
+.btn-create{
+    text-align: right;
+}
+.boxx{
+    width: 87%;
+}
+
+.btn-edit{
+    background-color: #f5efba;
+}
+.btn-del{
+    background-color: #fd816b;
+}
+
+form {
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f8b6ba;
+}
+
+label {
+    font-weight: bold;
+}
+
+select, input[type="number"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+input[type="submit"] {
+    background-color: #e4989d;
+    color: green;
+    cursor: pointer;
+    font-size: 20px
+}
+
+
+
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #e28c90;
+    color: white;
+}
+td{
+    background-color: #f8b6ba;
+    color: white;
+}
+th:last-child {
+    width: 210px; 
+}
