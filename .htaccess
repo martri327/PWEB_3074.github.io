@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /p10-route-template/
+RewriteRule ^index\\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteRule . /p10-route-template/index.php [L]
